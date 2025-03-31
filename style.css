@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background-image: url("background.png");
+  background-size: cover; /* cobre toda a tela */
+  background-position: center; /* centraliza a imagem */
+  background-repeat: no-repeat; /* não repete a imagem */
+  background-attachment: fixed;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fbfaf4;
+  padding: 1rem;
+  display: flex;
+  justify-content: right;
+  gap: 20px;
+}
+
+.navbar a {
+  color: #83847c;
+  text-decoration: none;
+  padding: 5px 20px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.navbar a:hover {
+  background-color: #575757;
+  border-radius: 5px;
+}
+
+/* Estilo das seções */
+section {
+  height: 70vh;
+  padding-top: 30px; /* Ajusta o espaçamento para a navbar não cobrir o conteúdo */
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 50px;
+}
+
+.texto {
+  max-width: 500px;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+#sobre .imagem {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #555;
+}
+
+h2 {
+  color: #727372;
+}
+
+
+#projetos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding-top: 10px;
+  height: auto;
+}
+
+#projetos .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.container.reverse {
+  flex-direction: row-reverse; 
+}
+
+#projetos .texto {
+  max-width: 500px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+#projetos .imagem {
+  width: 350px;
+  height: 210px;
+  object-fit: cover;
+  border: 3px solid #555;
+}
+
+#projetos p{
+  color: #333;
+}
+
+#contato {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#contato p {
+  max-width: 500px;
+  font-size: 1.2rem;
+  color: #333;
+}
+#contato {
+  text-align: center;
+}
+
+
+.contato-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  max-width: 600px;
+}
+
+.icon{
+  width: 40px;
+  height: 40px;
+}
+
+.a{
+  text-align: center;
+}
