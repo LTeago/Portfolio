@@ -10,13 +10,18 @@ body {
 
 .navbar {
   position: fixed;
-  top: 0;
   width: 100%;
   background-color: #fbfaf4;
   padding: 1rem;
-  display: flex;
+  display: block;
   justify-content: right;
   gap: 20px;
+}
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
 .navbar a {
@@ -32,10 +37,9 @@ body {
   border-radius: 5px;
 }
 
-/* Estilo das seções */
 section {
   height: 70vh;
-  padding-top: 30px; /* Ajusta o espaçamento para a navbar não cobrir o conteúdo */
+  padding-top: 30px;
   display: flex;
   justify-content: center;
   font-size: 2rem;
@@ -53,6 +57,8 @@ section {
   max-width: 500px;
   font-size: 1.1rem;
   color: #333;
+  flex: 1;
+  min-width: 300px;
 }
 
 #sobre .imagem {
@@ -136,4 +142,14 @@ h2 {
 
 .a{
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Empilha os elementos verticalmente */
+    text-align: center;
+  }
+  .imagem {
+    max-width: 80%; /* Reduz a imagem para caber melhor */
+  }
 }
