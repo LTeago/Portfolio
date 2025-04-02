@@ -17,10 +17,22 @@ body {
   justify-content: right;
   gap: 20px;
 }
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .navbar {
     flex-direction: column;
     text-align: center;
+  }
+  body {
+    background-size: contain;
+    background-position: top; 
+    background-attachment: scroll; 
+  }
+  .container {
+    flex-direction: column; 
+    text-align: center;
+  }
+  .imagem {
+    max-width: 80%; 
   }
 }
 
@@ -146,10 +158,10 @@ h2 {
 
 @media (max-width: 768px) {
   .container {
-    flex-direction: column; /* Empilha os elementos verticalmente */
+    flex-direction: column; 
     text-align: center;
   }
   .imagem {
-    max-width: 80%; /* Reduz a imagem para caber melhor */
+    max-width: 80%; 
   }
 }
